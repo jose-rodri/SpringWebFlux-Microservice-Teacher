@@ -2,7 +2,8 @@ package jose.rodriguez.everis.peru.app.models.controllers;
 
 import java.net.URI;
 import java.util.Date;
-import javax.validation.Valid;
+import jose.rodriguez.everis.peru.app.models.document.Teacher;
+import jose.rodriguez.everis.peru.app.models.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -15,8 +16,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import jose.rodriguez.everis.peru.app.models.document.Teacher;
-import jose.rodriguez.everis.peru.app.models.service.TeacherService;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -30,7 +29,7 @@ public class TeacherController {
 
 
   /**
-   * . Método listar coment
+   * . Método 
    */
   @GetMapping
   public Mono<ResponseEntity<Flux<Teacher>>> findAll() {
@@ -55,7 +54,7 @@ public class TeacherController {
   }
 
   /**
-   * . Método filtrar por codigo
+   * . Método filtro por código
    * 
    * @return
    */
@@ -67,7 +66,7 @@ public class TeacherController {
   }
 
   /**
-   * . Método actualizar
+   * . Método actualizar 
    * 
    * @return
    */
@@ -91,8 +90,7 @@ public class TeacherController {
 
   /**
    * .
-   * 
-   * @return
+   Método eliminar
    */
   @DeleteMapping("/{id}")
   public Mono<ResponseEntity<Void>> delete(@PathVariable String id) {
