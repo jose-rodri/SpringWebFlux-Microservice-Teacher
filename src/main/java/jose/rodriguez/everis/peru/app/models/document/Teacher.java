@@ -1,13 +1,13 @@
 package jose.rodriguez.everis.peru.app.models.document;
 
+import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
-import lombok.Getter;
-import lombok.Setter;
-import java.util.Date;
-
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
